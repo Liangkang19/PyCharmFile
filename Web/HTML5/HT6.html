@@ -1,0 +1,87 @@
+<!-- HTML部分表格操作 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>知名自媒体成员表</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="老四,阿峰,阿雄,华农兄弟,独角show">
+    <meta name="description" content="知名自媒体成员特性分析">
+    <meta name="author" content="LK">
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        /* 将 thead 元素中的 th 元素的背景色设置为 grey */
+        /* 将 tbody 元素中的 th 元素的背景色设置为 lightgrey */
+        thead th {
+            background: grey;
+            color: white;
+        }
+        tbody th {
+            background: lightgrey;
+            color: black;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        caption {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>知名自媒体成员表</caption>
+        <!-- 添加 thead 和 tbody 元素，更细致地规划表格 -->
+        <thead>
+            <tr>
+                <th>外号</th>
+                <th>技能</th>
+                <th>名言</th>
+                <th>照片</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>老四</th>
+                <td>海王叉警告</td>
+                <td>哈哈，又是一条大货！</td>
+                <td><img src="Picture/laosi.PNG" alt="老四" width="300"></td>
+            </tr>
+            <tr>
+                <th>阿峰</th>
+                <td>鲈鱼钓警告</td>
+                <td>今天又是发财的节奏！</td>
+                <td><img src="Picture/afeng.PNG" alt="阿峰" width="300"></td>
+            </tr>
+            <tr>
+                <th>阿雄</th>
+                <td>渔网警告</td>
+                <td>这么小的一条石九公！</td>
+                <td><img src="Picture/axiong.PNG" alt="阿雄" width="300"></td>
+            </tr>
+            <tr>
+                <th>华农兄弟</th>
+                <td>中暑警告</td>
+                <td>兄弟家的果子成熟了，我们去摘亿点点...</td>
+                <td><img src="Picture/huanong.PNG" alt="华农兄弟" width="300"></td>
+            </tr>
+            <tr>
+                <th>独角show</th>
+                <td>拖鞋警告</td>
+                <td>这老美对咱中国的美食还是挺感兴趣的！</td>
+                <td><img src="Picture/unicorn.PNG" alt="独角show" width="300"></td>
+            </tr>
+        </tbody>
+        <!-- 添加 tfoot 元素 -->
+        <tfoot>
+            <tr>
+                <td colspan="4">上述为非官方资料，仅供娱乐！</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
