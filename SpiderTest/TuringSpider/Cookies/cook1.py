@@ -37,7 +37,8 @@ def login(self, email, password):
     r = self.session.get(url=self.login_url, headers=self.headers)
     if r.status_code == 200:
         self.profile(r.text)
-    print('successful')
+    print('upload successful')
+
 
 
 
