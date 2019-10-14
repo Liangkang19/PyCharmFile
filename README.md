@@ -4,3 +4,4 @@ author:liangkang,
 school:hunan university,
 local-> github : commit and push,
 github -> local: update project or pull
+information: xxx
