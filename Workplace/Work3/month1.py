@@ -1,4 +1,5 @@
-# 按照出行目的(AA)对不同年月(BR)的数据进行分组
+# 基于出行目的(AA)，将trip1604等每月数据(BR)进行分类
+# 分成HBO，HBSHOP等5类
 import pandas as pd
 
 date_name = ['trip1604', 'trip1605', 'trip1606', 'trip1607',
