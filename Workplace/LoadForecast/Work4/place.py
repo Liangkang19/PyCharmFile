@@ -5,6 +5,7 @@
 # 分成HBO，HBSHOP等5类
 
 import pandas as pd
+import numpy as np
 
 date_name = ['trip1604', 'trip1605', 'trip1606', 'trip1607',
              'trip1608', 'trip1609', 'trip1610', 'trip1611',
@@ -37,8 +38,7 @@ for i in range(0, 13):
         print(real_name)
         df1.to_excel(real_name, index=False)                  # 导出到文件
 
-key = pd.DataFrame(key_list)
-key.to_excel('key.xlsx', index=False)
-value = pd.DataFrame(value_list)
-value.to_excel('value.xlsx', index=False)
+num_list = np.vstack((key_list, value_list))
+num = pd.DataFrame(num_list)
+num.to_excel('num.xlsx', index=False)
 print(dict1)

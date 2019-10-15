@@ -1,9 +1,8 @@
 # 按照出行时间分类
 
 import pandas as pd
+import numpy as np
 
-list1 = [15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180]
-list2 = [29, 44, 59, 74, 89, 104, 119, 134, 149, 164, 179, 1000]
 list3 = ['trip1604HBO', 'trip1604HBSHOP', 'trip1604HBSOCREC', 'trip1604HBW', 'trip1604NHB',
          'trip1605HBO', 'trip1605HBSHOP', 'trip1605HBSOCREC', 'trip1605HBW', 'trip1605NHB',
          'trip1606HBO', 'trip1606HBSHOP', 'trip1606HBSOCREC', 'trip1606HBW', 'trip1606NHB',
@@ -17,15 +16,13 @@ list3 = ['trip1604HBO', 'trip1604HBSHOP', 'trip1604HBSOCREC', 'trip1604HBW', 'tr
          'trip1702HBO', 'trip1702HBSHOP', 'trip1702HBSOCREC', 'trip1702HBW', 'trip1702NHB',
          'trip1703HBO', 'trip1703HBSHOP', 'trip1703HBSOCREC', 'trip1703HBW', 'trip1703NHB',
          'trip1704HBO', 'trip1704HBSHOP', 'trip1704HBSOCREC', 'trip1704HBW', 'trip1704NHB']
+bins = list(range(0, 7695, 5))
 
 for i in range(0, 65):
     name1 = list3[i] + '.xlsx'
     df = pd.read_excel(name1)
-    df1 = df.sort_values(by='TRVLCMIN', ascending=True)   # 排序
-    for j in range(0, 12):
-        left = list1[j]
-        right = list2[j]
-        data1 = df1[df1.TRVLCMIN.between(left, right)]
-        name2 = list3[i] + str(list1[j]) + '.xlsx'
-        print(name2)
-        data1.to_excel(name2, index=False)
+    df1 = df.sort_values(by='TRPMILES', ascending=True)  # 排序
+    score_cut = pd.cut(df1['TRPMILES'], bins=bins, include_lowest=True, right=False)  # 通过pd.cut()函数把分数按照bins进行分割
+    score_num = pd.value_counts(score_cut)  # 查看每个区间的人数
+    num = pd.DataFrame(score_num)
+    print(num)

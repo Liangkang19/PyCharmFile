@@ -21,6 +21,7 @@
       <w>dlpwd</w>
       <w>dmid</w>
       <w>elbo</w>
+      <w>endtime</w>
       <w>fenlei</w>
       <w>figsize</w>
       <w>fname</w>
@@ -98,12 +99,14 @@
       <w>seaborn</w>
       <w>setname</w>
       <w>setrect</w>
+      <w>shuzu</w>
       <w>slist</w>
       <w>slsx</w>
       <w>spdata</w>
       <w>stipplot</w>
       <w>stockinfo</w>
       <w>stockspider</w>
+      <w>strttime</w>
       <w>subnav</w>
       <w>superbowls</w>
       <w>tabtop</w>
@@ -119,6 +122,7 @@
       <w>tripmonths</w>
       <w>trippub</w>
       <w>trippurp</w>
+      <w>trpmiles</w>
       <w>trvlcmin</w>
       <w>tsne</w>
       <w>uinfo</w>
