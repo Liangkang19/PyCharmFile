@@ -1,9 +1,15 @@
 import pandas as pd
 import numpy as np
 
-bin1 = list(range(0, 7695, 5))
-score_cut = pd.cut(score_list, bins)              # 通过pd.cut()函数把分数按照bins进行分割
-score_num = pd.value_counts(score_cut)            # 查看每个区间的人数
+df1 = pd.read_excel('trip1604HBO-mi.xlsx')
+df2 = pd.read_excel('trip1604HBSHOP-mi.xlsx')
+df3 = pd.concat([df1, df2], axis=0)
+
+df_empty = pd.DataFrame()
+df4 = pd.concat([df_empty, df3], axis=0)
+print(df4)
+
+
 
 
 
