@@ -1,4 +1,4 @@
-# 按照行车辆停留时间(AB)分类
+# 对AA数据，按照行车辆停留时间(AB)分类
 
 import pandas as pd
 
@@ -16,8 +16,8 @@ list3 = ['trip1604HBO', 'trip1604HBSHOP', 'trip1604HBSOCREC', 'trip1604HBW', 'tr
          'trip1703HBO', 'trip1703HBSHOP', 'trip1703HBSOCREC', 'trip1703HBW', 'trip1703NHB',
          'trip1704HBO', 'trip1704HBSHOP', 'trip1704HBSOCREC', 'trip1704HBW', 'trip1704NHB']
 bin1 = [-9]
-bin2 = list(range(5, 100, 5))
-bin3 = list(range(100, 1301, 100))
+bin2 = list(range(15, 300, 15))
+bin3 = list(range(300, 1301, 100))
 
 bins = bin1 + bin2 + bin3
 key_list = []

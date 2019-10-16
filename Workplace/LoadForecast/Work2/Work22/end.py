@@ -1,4 +1,4 @@
-# 按照结束时间分类
+# 对AA数据，按照结束时间(E)分类
 
 import pandas as pd
 

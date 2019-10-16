@@ -1,4 +1,4 @@
-# 按照开始时间分类
+# 对AA数据，按照开始时间(D)分类
 
 import pandas as pd
 

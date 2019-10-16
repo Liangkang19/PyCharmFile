@@ -1,4 +1,4 @@
-# 按照行驶里程分类
+# 对AA数据，按照行驶里程(G)分类
 
 import pandas as pd
 
