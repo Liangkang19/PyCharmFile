@@ -11,14 +11,15 @@ from requests.exceptions import HTTPError
 
 base_url1 = 'http://118.178.151.173/s?q=1&qt='
 base_url2 = 'http://118.178.151.173/'
-goods = '汽车'
+goods = '电动汽车'
 params = '&pageSize=10&database=all&siteCode=bm04000007&docQt=&page='
 
 headers1 = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)\
         AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
 }
-proxy = '51.68.172.7:3128'
+# proxy = '91.214.31.234:8080'
+proxy = '78.29.42.10:4550'
 proxies1 = {
     'http': 'http://' + proxy,
     'https': 'https://' + proxy

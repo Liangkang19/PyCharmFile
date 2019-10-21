@@ -11,12 +11,11 @@ from requests.exceptions import HTTPError
 
 base_url1 = 'http://118.178.151.173/s?q=1&qt='
 base_url2 = 'http://118.178.151.173/'
-goods = '汽车'
+goods = '电动汽车充电'
 params = '&pageSize=10&database=all&siteCode=bm04000007&docQt=&page='
 
 headers1 = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)\
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0'
 }
 proxy = '51.68.172.7:3128'
 proxies1 = {
@@ -110,7 +109,7 @@ def save_to_file(result):
         将爬取的结果信息，存入本地的.txt文件中
         :param result: 爬取的结果信息
     """
-    with open(file='Evs2.txt', mode='a', encoding='utf8') as f:
+    with open(file='Evs11.txt', mode='a', encoding='utf8') as f:
         f.write(str(result) + '\n')
 
 
@@ -132,7 +131,7 @@ if __name__ == '__main__':
     """
         用于启动主程序，遍历爬取n页主网页中的子网页信息   
     """
-    for i in range(1, 3):
+    for i in range(1, 11):
         list1 = []
         list2 = []
         list3 = []
