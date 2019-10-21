@@ -27,3 +27,4 @@ future = m.make_future_dataframe(freq='D', periods=365)     # 建立数据预测
 forecast = m.predict(future)
 m.plot(forecast).show()                                     # 绘制预测效果图
 m.plot_components(forecast).show()                          # 绘制成分趋势图
+
