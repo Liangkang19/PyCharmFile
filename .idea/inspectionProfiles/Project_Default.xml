@@ -27,6 +27,8 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="bool.*" />
+          <option value="tensorflow.__version__" />
+          <option value="tensorflow_core._api.v2.test.is_gpu_available" />
         </list>
       </option>
     </inspection_tool>

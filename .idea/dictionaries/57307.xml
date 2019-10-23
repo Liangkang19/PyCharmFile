@@ -13,6 +13,7 @@
       <w>barh</w>
       <w>biaotou</w>
       <w>containerid</w>
+      <w>convnet</w>
       <w>countprice</w>
       <w>darkgrid</w>
       <w>datacut</w>
@@ -115,6 +116,7 @@
       <w>taobao</w>
       <w>taobaomain</w>
       <w>tdaydate</w>
+      <w>tensorflow</w>
       <w>timesteps</w>
       <w>toscrape</w>
       <w>tplt</w>
