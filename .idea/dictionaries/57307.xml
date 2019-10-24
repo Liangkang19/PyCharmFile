@@ -15,6 +15,7 @@
       <w>containerid</w>
       <w>convnet</w>
       <w>countprice</w>
+      <w>crossentropy</w>
       <w>darkgrid</w>
       <w>datacut</w>
       <w>deepth</w>
@@ -47,6 +48,7 @@
       <w>iloc</w>
       <w>ipad</w>
       <w>itemlist</w>
+      <w>keras</w>
       <w>khtml</w>
       <w>kmeans</w>
       <w>kmeansplot</w>
@@ -82,6 +84,7 @@
       <w>mblog</w>
       <w>meanx</w>
       <w>medoid</w>
+      <w>mnist</w>
       <w>mumx</w>
       <w>mykey</w>
       <w>mylist</w>
@@ -93,6 +96,7 @@
       <w>pymysql</w>
       <w>pyquery</w>
       <w>releasetime</w>
+      <w>relu</w>
       <w>reposts</w>
       <w>rmid</w>
       <w>rmidx</w>
@@ -105,6 +109,7 @@
       <w>shuzu</w>
       <w>slist</w>
       <w>slsx</w>
+      <w>softmax</w>
       <w>spdata</w>
       <w>stipplot</w>
       <w>stockinfo</w>

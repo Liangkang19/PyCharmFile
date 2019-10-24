@@ -6,6 +6,16 @@
         <language minSize="97" name="Python" />
       </Languages>
     </inspection_tool>
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="2.7" />
+            <item index="1" class="java.lang.String" itemvalue="3.8" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
     <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <option name="ignoredErrors">
         <list>
@@ -29,6 +39,12 @@
           <option value="bool.*" />
           <option value="tensorflow.__version__" />
           <option value="tensorflow_core._api.v2.test.is_gpu_available" />
+          <option value="tensorflow_core.python.keras.api._v2.keras.datasets.mnist.load_data" />
+          <option value="tensorflow_core.python.keras.api._v2.keras.models.Sequential" />
+          <option value="tensorflow_core.python.keras.api._v2.keras.layers.Flatten" />
+          <option value="tensorflow_core.python.keras.api._v2.keras.layers.Dense" />
+          <option value="tensorflow_core.python.keras.api._v2.keras.layers.Dropout" />
+          <option value="tensorflow.keras" />
         </list>
       </option>
     </inspection_tool>
