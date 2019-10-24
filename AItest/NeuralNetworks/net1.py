@@ -19,13 +19,7 @@ model = keras.models.Sequential([
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
+
 # 训练并验证模型
 model.fit(x_train, y_train, epochs=5)
-
 model.evaluate(x_test,  y_test, verbose=2)
-
-
-
-
-
-
