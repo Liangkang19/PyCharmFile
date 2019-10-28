@@ -4,7 +4,7 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 
 from tensorflow import keras
 
-mnist = keras.datasets.mnist
+mnist = keras.datasets.mnist                               # 新的引用格式
 (x_train, y_train), (x_test, y_test) = mnist.load_data()   # 载入MNIST数据集
 x_train, x_test = x_train / 255.0, x_test / 255.0          # 将样本从整数转换为浮点数
 
